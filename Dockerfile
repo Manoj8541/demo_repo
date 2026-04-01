@@ -1,11 +1,11 @@
 # Use official Python image
-FROM python:3.9-slim
+FROM python:3.10-slim
 
 # Set working directory
 WORKDIR /app
 
-# Copy files into container
-COPY . .
+# Copy your file into container
+COPY hello.py .
 
-# Run a simple command
-CMD ["python", "-c", "print('Hello from Docker!')"]
+# Run the script
+CMD ["python", "hello.py"]

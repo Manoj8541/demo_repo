@@ -18,5 +18,5 @@ jobs:
     - name: Run container
       run: docker run myapp
 
-   # - name: list files
-   #   run: ls -ls
+    - name: list files
+      run: ls -ls
